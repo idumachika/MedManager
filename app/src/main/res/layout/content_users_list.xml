@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication Name"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#080808"/>
+        <!--<EditText android:id="@+id/title"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/etMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="rounded"
+            android:gravity="left"
+            app:bootstrapbutton="primary"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drug Interval/Frequency"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#080808"
+            />
+        <!--<EditText android:id="@+id/body" android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minLines="5"-->
+        <!--android:scrollbars="vertical" -->
+        <!--android:gravity="top" />-->
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/etTime_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="5"
+            android:hint="rounded"
+            android:gravity="top"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#080808"/>
+        <Button
+            android:id="@+id/reminder_date"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBackground"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#080808"/>
+        <Button
+            android:id="@+id/reminder_time"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBackground"
+            />
+
+        <!--<Button android:id="@+id/confirm" -->
+        <!--android:text="@string/confirm"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="confirm"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
